@@ -24,3 +24,17 @@
 // isEven(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEven (nb) {
+    var result = nb % 5;
+    if (result === 1) {
+        console.log("Le nombre " + nb + " est pair");
+    } else if (result === 0) {
+        console.log("Le nombre " + nb + " est impair");
+    } else {
+    console.log("Indiquez un nombre");
+}
+}
+
+isEven(6);
+isEven(5);
