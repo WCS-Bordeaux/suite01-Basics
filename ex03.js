@@ -29,3 +29,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition( a,b)
+{
+    return a+b;
+}
+//testes :
+addition(6,9);
+addition(98766, 345678);
