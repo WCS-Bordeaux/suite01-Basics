@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a9bcea2-7844-4b02-860a-331a5c6eb8f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ex08.js" afterPath="$PROJECT_DIR$/ex08.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ex09.js" afterPath="$PROJECT_DIR$/ex09.js" />
     </list>
     <ignored path="suite01-Basics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,23 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex07.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ex07.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ex08.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ex08.js">
+      <file leaf-file-name="ex09.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ex09.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="429">
-              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -57,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex04.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ex04.js">
+      <file leaf-file-name="ex08.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ex08.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="309">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -85,6 +73,7 @@
         <option value="$PROJECT_DIR$/ex06.js" />
         <option value="$PROJECT_DIR$/ex07.js" />
         <option value="$PROJECT_DIR$/ex08.js" />
+        <option value="$PROJECT_DIR$/ex09.js" />
       </list>
     </option>
   </component>
@@ -163,12 +152,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490620531095</updated>
-      <workItem from="1490620532294" duration="5584000" />
+      <workItem from="1490620532294" duration="6022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5584000" />
+    <option name="totallyTimeSpent" value="6022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -310,8 +299,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ex08.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex09.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
