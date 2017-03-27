@@ -24,3 +24,16 @@
 // isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
+function isEvenConcat(nb) {
+    if (typeof nb === 'number') {
+        if (nb % 2) {
+            return nb + " est impair";
+        }
+        else {
+            return nb + " est pair";
+        }
+    }
+
+}
+isEvenConcat(6);
+isEvenConcat(5);
