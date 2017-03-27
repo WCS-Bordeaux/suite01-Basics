@@ -18,3 +18,27 @@
 
 */
 
+function isAdult(age) {
+
+    if (age >= 18)
+        return "oui";
+
+    return "non";
+
+}
+
+
+function getPerson(firstName, lastName, age) {
+
+    var myObject = {fullName: firstName + " " + lastName,
+
+                    age: age,
+
+                    adult: isAdult(age)
+                   };
+
+    return myObject;
+
+} 
+
+console.log(getPerson("toto", "tata", 45));
