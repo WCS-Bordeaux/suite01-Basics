@@ -76,3 +76,71 @@
 */
 
 // write your code below this comment
+
+function evalExpAdd(x, y) {
+    return x + y;
+}
+function evalExpSub(x, y) {
+    return x - y;
+}
+function evalExpModul(x, y) {
+    return x % y;
+}
+function evalExpMulti(x, y) {
+    return x * y;
+}
+function evalExpDivi(x, y) {
+    return x / y;
+}
+
+function getRandNum(multiplier) {
+    var multiplier = multiplier || 10000;
+    return Math.round(Math.random() * multiplier);
+}
+
+function getSign() {
+    return getRandNum(4);
+}
+
+function generateCalculs(nb) {
+    var arrSign = ["multi", "add", "sub", "modulo", "divide"];
+    var sign = "";
+    var x = 0;
+    var y = 0;
+    var res = 0;
+    while(nb > 0) {
+        nb--;
+        x = getRandNum(Math.random() * 10);
+        y = getRandNum(Math.random() * 10);
+        getRandNum(5);
+        switch (arrSign[getRandNum(5)]) {
+            case "multi":
+                res = x * y;
+                sign = " * ";
+                break;
+            case "add":
+                res = x + y;
+                sign = " + ";
+                break;
+            case "sub":
+                res = x - y;
+                sign = " - ";
+                break;
+            case "modulo":
+                res = x % y;
+                sign = " % ";
+                break;
+            case "divide":
+                res = x / y;
+                sign = " / ";
+                break;
+        }
+        console.log( x + sign + y + " = " + res);
+    }
+}
+
+getRandNum();
+getSign();
+
+
+generateCalculs(6);
