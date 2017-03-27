@@ -39,3 +39,46 @@
 // ]);
 
 //  écrire votre code sous ce commentaire
+
+function shoppingList(myArray) {
+
+    var outObject = {};
+
+// Je suis sur que le triple boucle suivant n'est pas du tout la solution
+// la plus elegante, mais ca a marche :)
+
+    for (var i = 0; i < myArray.length; i++) {
+
+        for (var j = 0; j < myArray[i].length; j++) {
+
+        	var fruit = myArray[i][j];
+
+        	if (!(fruit in outObject)) {
+
+        		outObject[fruit] = 1;
+
+        	} else {
+
+        		outObject[fruit]++;
+
+        	}
+        
+        }
+    
+    }
+
+    return outObject;
+
+}
+
+// Test 1
+
+var result = shoppingList([
+    ["orange", "orange", "kiwi", "ananas"],
+    ["kiwi", "ananas", "banane", "prune"],
+    ["orange", "orange", "orange", "orange"],
+    ["orange", "orange", "kiwi", "kiwi"],
+    ["prune", "banane", "pamplemousse", "ananas"]
+]);
+
+console.log(result);
