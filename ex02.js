@@ -24,5 +24,4 @@
 function retParam(nb) {
     return nb;
 }
-
-console.log(retParam());
+retParam(5)
