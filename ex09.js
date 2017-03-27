@@ -22,3 +22,27 @@
 // boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
 
 //  écrire votre code sous ce commentaire
+
+function boostedEvenAddition(myArray) {
+
+    var sumPair = 0;
+
+    var i = 0;
+    while (i < myArray.length) {
+
+        if (myArray[i] % 2 === 0)
+            sumPair = sumPair + myArray[i];
+
+        i++; 
+
+    }
+
+    return sumPair;
+
+}
+
+// Test 1
+console.log(boostedEvenAddition([4, 5, 6]));
+
+// Test 2
+console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));
