@@ -21,6 +21,7 @@
 function returnParameter(nb) {
     return nb;
 }
-
 //  écrire votre code sous ce commentaire
+
+returnParameter(5);
 
