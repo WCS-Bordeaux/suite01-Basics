@@ -24,3 +24,15 @@
 // isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEvenConcat (nb) {
+    var result = nb % 2;
+    if (result === 0){
+        console.log(nb + " est pair.");
+    } else {
+        console.log(nb + " est impair.");
+    }
+}
+
+isEvenConcat(6);
+isEvenConcat(5);
