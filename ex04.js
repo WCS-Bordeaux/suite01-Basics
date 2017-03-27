@@ -24,3 +24,15 @@
 // isEven(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEven(num) {
+    if (num % 2 === 0)
+        return 1;
+    return 0; 
+}
+
+// Test1
+console.log(isEven(6));
+
+// Test2
+console.log(isEven(5));
