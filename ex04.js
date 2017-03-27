@@ -31,5 +31,5 @@ function isEven(nb) {
     else
         return 0;
 }
-isEven(6);
-isEven(5);
+console.log(isEven(6));
+console.log(isEven(5));

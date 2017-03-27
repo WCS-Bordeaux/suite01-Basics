@@ -23,3 +23,4 @@
 function retParam(nb) {
     return nb;
 }
+console.log(retParam(5));
