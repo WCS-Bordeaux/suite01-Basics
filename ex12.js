@@ -76,3 +76,27 @@
 */
 
 // write your code below this comment
+
+// function num.1 : it solves a 2nd degree equation
+function roots(a, b, c) {
+
+    if (b**2 < 4*a*c) {
+
+        console.log("Two complex solutions");
+
+    } else if (b**2 == 4*a*c) {
+
+        var x1 = -b / (2*a);
+        var x2 = x1;
+        return x1;
+
+    } else {
+
+        var x1 = (-b - Math.sqrt(b**2 - 4*a*c)) / (2*a);
+        var x2 = (-b + Math.sqrt(b**2 - 4*a*c)) / (2*a);
+        return [x1, x2];
+    }
+
+}
+
+console.log("x1 = " + roots(2, 10, 6)[0] + " and x2 = " + roots(2, 10, 6)[1]);
