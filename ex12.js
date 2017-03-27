@@ -77,6 +77,8 @@
 
 // write your code below this comment
 
+var isHtmlVersion = isHtmlVersion || false;
+
 function evalExpAdd(x, y) {
     return x + y;
 }
@@ -102,14 +104,32 @@ function getSign() {
     return getRandNum(4);
 }
 
+function animateEnd() {
+    var container = document.getElementById('container');
+    origWidth = parseInt(getComputedStyle(container).width);
+
+    function smallestContainer(w) {
+        setTimeout(function () {
+            if ( w > 0) {
+                w -= 2;
+                container.style.width = w + "px";
+                container.style.height = w + parseInt(container.style.width)  + "px";
+                smallestContainer(w);
+            }
+        }, 2);
+    }
+    smallestContainer(origWidth);
+
+}
 function generateCalculs(nb) {
     var arrSign = ["multi", "add", "sub", "modulo", "divide"];
     var sign = "";
     var x = 0;
     var y = 0;
     var res = 0;
-    while(nb > 0) {
-        nb--;
+
+    setTimeout(function () {
+        --nb;
         x = getRandNum(Math.random() * 10);
         y = getRandNum(Math.random() * 10);
         getRandNum(5);
@@ -135,12 +155,42 @@ function generateCalculs(nb) {
                 sign = " / ";
                 break;
         }
-        console.log( x + sign + y + " = " + res);
-    }
+        var result = x + sign + y + " = " + res;
+        console.log( result );
+        /* bonus  */
+        if(isHtmlVersion) {
+            var resHolder = document.createElement('p');
+            resHolder.setAttribute('id', 'monitor-text');
+            var resTxt = document.createTextNode( result );
+            resHolder.appendChild(resTxt);
+
+            var oldEl = document.getElementById('monitor-text');
+            var oldElParent = oldEl.parentNode;
+            oldElParent.replaceChild( resHolder, oldEl );
+        }
+        if(nb > 0) {
+            generateCalculs(nb);
+        }
+        else {
+            animateEnd();
+        }
+    }, 150);
+
 }
 
-getRandNum();
-getSign();
+if(!isHtmlVersion) {
+    getRandNum();
+    getSign();
+    generateCalculs(6);
+}
 
 
-generateCalculs(6);
+/* bonus */
+if(isHtmlVersion) {
+    window.addEventListener('load', function () {
+        document.getElementById('generate').onclick = function () {
+            generateCalculs(document.getElementById('repeat').value);
+        }
+    });
+}
+/* bonus end */
