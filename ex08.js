@@ -31,3 +31,34 @@
 
 //  écrire votre code sous ce commentaire
 
+var tableau = [];
+var modulo = 0;
+var sum = 0
+
+function isAllEven (tableau) {
+    for (i = 0; i<tableau.length; i++) {
+        modulo = isEven(tableau[i]);
+        sum += modulo;
+    }
+    if (sum === 0){
+        console.log ("Tous les nombres son pairs");
+        return 1;
+    } else {
+        console.log ("Au moin un nombre est impair");
+        return 0;
+    }
+    
+}
+
+function isEven (nb) {
+    var result = nb % 2;
+    if (result === 0) {
+        console.log("Le nombre " + nb + " est pair");
+    } else if (result === 1) {
+        console.log("Le nombre " + nb + " est impair");
+    } else {
+    console.log("Indiquez un nombre");
+}
+}
+
+
