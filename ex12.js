@@ -113,7 +113,7 @@ function animateEnd() {
             if ( w > 0) {
                 w -= 2;
                 container.style.width = w + "px";
-                container.style.height = w + parseInt(container.style.width)  + "px";
+                container.style.height = w + "px";
                 smallestContainer(w);
             }
         }, 2);
