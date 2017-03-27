@@ -29,3 +29,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition (nb1, nb2) {
+    var result = nb1 + nb2;
+    return result;
+}
+
+console.log(addition(6,9));
+console.log(addition(98766,345678));
