@@ -24,3 +24,9 @@
 // isEven(5);
 
 //  écrire votre code sous ce commentaire
+function isEven(nb) {
+    return 1-(nb %2);
+}
+
+isEven(6);
+isEven(5);
