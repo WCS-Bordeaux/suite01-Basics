@@ -22,3 +22,14 @@
 // boostedAddition([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
+function boostedAddition ( tab)
+{
+    var cpt=0;
+    for(i=0;i< tab.length;i++)
+    {
+        cpt =cpt+tab[i];
+    }
+    return cpt;
+}
+console.log(boostedAddition([4, 5, 6]));
+console.log(boostedAddition([4, 4, 6, 8, 10, 12]));
