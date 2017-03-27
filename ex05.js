@@ -27,8 +27,8 @@
 
 function isEvenConcat(num) {
     if (num % 2 === 0)
-        return num + " is even";
-    return num + " is odd"; 
+        return num + " est pair";
+    return num + " est impair"; 
 }
 
 // Test 1
