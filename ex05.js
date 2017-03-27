@@ -24,3 +24,15 @@
 // isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEvenConcat(num) {
+    if (num % 2 === 0)
+        return num + " is even";
+    return num + " is odd"; 
+}
+
+// Test 1
+console.log(isEvenConcat(6));
+
+// Test 2
+console.log(isEvenConcat(5));
