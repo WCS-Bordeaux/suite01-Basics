@@ -32,6 +32,7 @@
 function addition (nb1, nb2) {
     var result = nb1 + nb2;
     return result;
+    
 }
 
 console.log(addition(6,9));

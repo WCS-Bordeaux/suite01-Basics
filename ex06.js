@@ -63,9 +63,3 @@ function getHumanTypeByAge (age) {
         console.log("enfant");
     }
 }
-
-getHumanTypeByAge(-5);
-getHumanTypeByAge(6);
-getHumanTypeByAge(17);
-getHumanTypeByAge(33);
-getHumanTypeByAge(140);

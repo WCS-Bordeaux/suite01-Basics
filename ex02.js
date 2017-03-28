@@ -24,5 +24,3 @@
 function retParam (nb){
     console.log(nb);
 }
-
-retParam(5);

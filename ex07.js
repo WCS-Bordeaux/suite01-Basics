@@ -33,6 +33,3 @@ function boostedAddition(tableau) {
     console.log(result);
     result = 0;
 }
-
-boostedAddition([4, 5, 6]);
-boostedAddition([4, 4, 6, 8, 10, 12]);

@@ -26,15 +26,14 @@
 //  écrire votre code sous ce commentaire
 
 function isEven (nb) {
-    var result = nb % 5;
-    if (result === 1) {
+    var result = nb % 2;
+    if (result === 0) {
         console.log("Le nombre " + nb + " est pair");
-    } else if (result === 0) {
+        return 1;
+    } else if (result === 1) {
         console.log("Le nombre " + nb + " est impair");
+        return 0;
     } else {
     console.log("Indiquez un nombre");
 }
 }
-
-isEven(6);
-isEven(5);

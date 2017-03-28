@@ -33,6 +33,3 @@ function isEvenConcat (nb) {
         console.log(nb + " est impair.");
     }
 }
-
-isEvenConcat(6);
-isEvenConcat(5);
