@@ -73,12 +73,12 @@ function shoppingList(myArray) {
 
 // Test 1
 
-var result = shoppingList([
+/*var result = shoppingList([
     ["orange", "orange", "kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
     ["prune", "banane", "pamplemousse", "ananas"]
-]);
+]);*/
 
-console.log(result);
+//console.log(result);
