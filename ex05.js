@@ -32,7 +32,7 @@ function isEvenConcat(num) {
 }
 
 // Test 1
-console.log(isEvenConcat(6));
+// console.log(isEvenConcat(6));
 
 // Test 2
-console.log(isEvenConcat(5));
+// console.log(isEvenConcat(5));
