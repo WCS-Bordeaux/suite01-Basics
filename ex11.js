@@ -51,13 +51,8 @@ function shoppingList(tab) {
         }
     }
     tab.forEach(parcours);
-    console.log(result);
+    
+    return result;
 }
 
-// shoppingList([
-//     ["orange", "orange", "kiwi", "ananas"],
-//     ["kiwi", "ananas", "banane", "prune"],
-//     ["orange", "orange", "orange", "orange"],
-//     ["orange", "orange", "kiwi", "kiwi"],
-//     ["prune", "banane", "pamplemousse", "ananas"]
-// ]);
+
