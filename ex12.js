@@ -76,3 +76,55 @@
 */
 
 // write your code below this comment
+
+function add (nb1,nb2) {
+    return nb1+nb2;
+}
+
+function sub (nb1,nb2) {
+    return nb1-nb2;
+}
+
+function prod (nb1,nb2) {
+    return nb1*nb2;
+}
+
+function div (nb1,nb2) {
+    return nb1/nb2;
+}
+
+function mod (nb1,nb2) {
+    return nb1%nb2;
+}
+
+
+function evalExpr (nb1, nb2, op){
+    if (op === "+" || op === 1) {
+       return add(nb1,nb2);
+    } else if (op === "-" || op === 2) {
+        return sub(nb1,nb2);
+    } else if (op === "*"|| op === 3) {
+        return prod(nb1,nb2);
+    } else if (op === "/"|| op === 4) {
+        return div(nb1,nb2);
+    } else if (op === "%" || op === 0) {
+        return mod(nb1,nb2);
+    }
+}
+
+function getRandNum (min=100,max=1000) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandSign () {
+    return getRandNum(0,4);
+}
+
+function generateCalculs () {
+    num1 = getRandNum();
+    num2 = getRandNum();
+    sign = getRandSign();
+    return evalExpr (num1, num2, sign);
+}
+
+
