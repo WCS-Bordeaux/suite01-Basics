@@ -36,6 +36,28 @@
 //     ["orange", "orange", "orange", "orange"],
 //     ["orange", "orange", "kiwi", "kiwi"],
 //     ["prune", "banane", "pamplemousse", "ananas"]
-// ]);
+// // ]);
 
 //  écrire votre code sous ce commentaire
+function shoppingList(tab) {
+    result = {};
+    function parcours(element) {
+
+        for (var i = 0; i < element.length; ++i) {
+            if (!result[element[i]])
+                result[element[i]] = 0;
+            ++result[element[i]];
+
+        }
+    }
+    tab.forEach(parcours);
+    console.log(result);
+}
+
+// shoppingList([
+//     ["orange", "orange", "kiwi", "ananas"],
+//     ["kiwi", "ananas", "banane", "prune"],
+//     ["orange", "orange", "orange", "orange"],
+//     ["orange", "orange", "kiwi", "kiwi"],
+//     ["prune", "banane", "pamplemousse", "ananas"]
+// ]);
