@@ -1,3 +1,4 @@
+
 /*
     Ecrire une fonction "isAllEven",
     qui prend un paramètre un tableau de nombre,
