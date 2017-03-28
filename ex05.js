@@ -26,10 +26,8 @@
 //  écrire votre code sous ce commentaire
 function isEvenConcat(nb) {
     if (nb % 2 === 0) {
-        return "Le nombre est pair";
+        return nb+" Le nombre est pair";
     }
     else
-        return "Le nombre est impair";
+        return nb+" Le nombre est impair";
 }
-
-console.log(isEvenConcat(5));

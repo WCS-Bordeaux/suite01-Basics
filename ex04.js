@@ -30,6 +30,8 @@ function isEven(nb) {
     }
     else
         return 0;
+//return ( nb % 2 ) %2; 
+
 }
 console.log(isEven(6));
 console.log(isEven(5));
