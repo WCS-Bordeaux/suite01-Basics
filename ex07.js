@@ -38,6 +38,6 @@ function boostedAddition(myArray) {
 }
 
 // Test1
-console.log(boostedAddition([4, 5, 6]));
+//console.log(boostedAddition([4, 5, 6]));
 // Test2
-console.log(boostedAddition([4, 4, 6, 8, 10, 12]));
+//console.log(boostedAddition([4, 4, 6, 8, 10, 12]));
