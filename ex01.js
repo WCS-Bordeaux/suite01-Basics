@@ -18,14 +18,18 @@
     qui retourne ce paramètre "nb";
 */
 
+
+
+//  écrire votre code sous ce commentaire
+
 function returnParameter(nb) {
     return nb;
 }
 
-//  écrire votre code sous ce commentaire
-
+/*
 console.log(returnParameter(5));
 console.log(returnParameter("Massimiliano"));
 console.log(returnParameter(true));
 console.log(returnParameter([13, 17]));
 console.log(returnParameter({key1: 5, key2: "Massi", key3: false}));
+*/
