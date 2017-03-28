@@ -45,7 +45,7 @@
     // On a new branch "bonus"
 
     // Migrate your script to a HTML page in a new file named "bonus.js".
-    // You will reuse generateCalculs
+    // You will reuse generateCalcul
 
     // Try to do a HTML/CSS interface that can:
         - control the number calcul (input);
@@ -190,7 +190,7 @@ function generateCalcul(nb) {
             oldElParent.replaceChild( resHolder, oldEl );
         }
         if(nb > 0) {
-            generateCalculs(nb);
+            generateCalcul(nb);
         }
         else {
             if(isHtmlVersion) {
@@ -203,8 +203,8 @@ function generateCalcul(nb) {
 
 if(!isHtmlVersion) {
     getRandNum();
-    getSign();
-    generateCalculs(6);
+    getRandSign();
+    generateCalcul(6);
 }
 
 
@@ -212,7 +212,7 @@ if(!isHtmlVersion) {
 if(isHtmlVersion) {
     window.addEventListener('load', function () {
         document.getElementById('generate').onclick = function () {
-            generateCalculs(document.getElementById('repeat').value);
+            generateCalcul(document.getElementById('repeat').value);
         }
     });
 }
