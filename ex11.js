@@ -40,17 +40,25 @@
 
 //  écrire votre code sous ce commentaire
 
-function shoppingList(paniers)  {
-var counts = {}, i, val;
-for (i = 0; i < paniers.length; i++) {
-    for(j = 0; j< paniers[i].length;j++){
-        val = paniers[i][j];
-        if (typeof counts[val] === "undefined") {
-            counts[val] = 1;
-        } else {
-            counts[val]++;
+function shoppingList(paniers) {
+    var counts = {};
+    for (i = 0; i < paniers.length; i++) {
+        for (j = 0; j < paniers[i].length; j++) {
+            val = paniers[i][j];
+            if (typeof counts[val] === "undefined") {
+                counts[val] = 1;
+            } else {
+                counts[val]++;
+            }
         }
     }
+    console.log(counts);
 }
-console.log(counts);
-}
+
+shoppingList([
+     ["orange", "orange", "kiwi", "ananas"],
+     ["kiwi", "ananas", "banane", "prune"],
+     ["orange", "orange", "orange", "orange"],
+     ["orange", "orange", "kiwi", "kiwi"],
+     ["prune", "banane", "pamplemousse", "ananas"]
+ ]);
