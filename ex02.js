@@ -25,4 +25,4 @@ function retParam(param) {
    return param; 
 }
 
-console.log(retParam(5));
+// console.log(retParam(5));
