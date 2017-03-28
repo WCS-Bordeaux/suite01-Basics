@@ -42,7 +42,7 @@ function boostedEvenAddition(myArray) {
 }
 
 // Test 1
-console.log(boostedEvenAddition([4, 5, 6]));
+//console.log(boostedEvenAddition([4, 5, 6]));
 
 // Test 2
-console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));
+//console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));
