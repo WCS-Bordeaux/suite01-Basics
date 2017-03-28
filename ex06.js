@@ -75,12 +75,12 @@ function getHumanTypeByAge(age) {
 }
 
 // Test1
-console.log(getHumanTypeByAge(-5));
+//console.log(getHumanTypeByAge(-5));
 // Test2
-console.log(getHumanTypeByAge(6));
+//console.log(getHumanTypeByAge(6));
 // Test3
-console.log(getHumanTypeByAge(17));
+//console.log(getHumanTypeByAge(17));
 // Test4
-console.log(getHumanTypeByAge(33));
+//console.log(getHumanTypeByAge(33));
 // Test5
-console.log(getHumanTypeByAge(140));
+//console.log(getHumanTypeByAge(140));
