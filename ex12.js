@@ -80,24 +80,50 @@
 var isHtmlVersion = isHtmlVersion || false;
 
 function evalExpAdd(x, y) {
-    return x + y;
+    return x + y || "input datas not valid (" + x + y + ")";
 }
 function evalExpSub(x, y) {
-    return x - y;
+    return x - y || "input datas not valid (" + -  y + ")";
 }
 function evalExpModul(x, y) {
-    return x % y;
+    return x % y || "input datas not valid (" + x % y + ")";
 }
 function evalExpMulti(x, y) {
-    return x * y;
+    return x * y || "input datas not valid (" + x * y + ")";
 }
 function evalExpDivi(x, y) {
-    return x / y;
+    return x / y || "input datas not valid (" + x / y + ")";
 }
 
+function evalExp(x, y, sign) {
+    let res = 0;
+    switch(sign) {
+        case "+":
+            res = evalExpAdd(x, y);
+            break;
+        case '-':
+            res = evalExpSub(x, y);
+            break;
+        case '*':
+            res = evalExpMulti(x, y);
+            break;
+        case '%':
+            res = evalExpModul(x, y);
+            break;
+        case '/':
+            res = evalExpDivi(x, y);
+            break;
+        default:
+            res = 'Unknow operator';
+            break;
+    }
+    return res;
+}
 function getRandNum(multiplier) {
-    var multiplier = multiplier || 10000;
-    return Math.round(Math.random() * multiplier);
+    var multiplier = (multiplier + 1) || 10001;
+    let result = Math.round(Math.random() * multiplier);
+    if( result > multiplier) { result = multiplier;}
+    return result;
 }
 
 function getSign() {
@@ -172,7 +198,9 @@ function generateCalculs(nb) {
             generateCalculs(nb);
         }
         else {
-            animateEnd();
+            if(isHtmlVersion) {
+                animateEnd();
+            }
         }
     }, 150);
 
