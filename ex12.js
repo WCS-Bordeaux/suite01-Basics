@@ -26,24 +26,20 @@
 
     // // // step 2
 
-    // Code a function "getRandNum" that return a random number between 0(included) and 10 000(included).
+    // Code a function "getRandNum" that return a random number between 0(included) and 100 000(included).
 
     // Validation:
     // really random please.
 
-    // Code a function "getSign" that return a random number between 0(included) and 4(included).
-
-    // Validation:
-    // Reuse getRandNum
+    // Code a function "getRandSign" that return a random number between 0(included) and 4(included).
 
     // // // step 3
-
-    // Write a function "generateCalculs" that can generate random calculs and display the result in the console;
+    // Write a function "generateCalcul" that can generate random calcul and display the result in the console;
     // We will pass a number, which is the desired number calculs.
 
     Tips:
-    Reuse getSign ;)
-    
+    Reuse getRandSign & getRandNum ;)
+
     // // // step 4 - BONUS
 
     // On a new branch "bonus"
@@ -120,12 +116,12 @@ function evalExp(x, y, sign) {
     return res;
 }
 function getRandNum(multiplier) {
-    var multiplier = (multiplier ) || 10000;
+    var multiplier = multiplier || 100000;
     let result = Math.round(Math.random() * multiplier);
     return result;
 }
 console.log(getRandNum(4));
-function getSign() {
+function getRandSign() {
     return getRandNum(4);
 }
 
@@ -146,7 +142,7 @@ function animateEnd() {
     smallestContainer(origWidth);
 
 }
-function generateCalculs(nb) {
+function generateCalcul(nb) {
     var arrSign = ["multi", "add", "sub", "modulo", "divide"];
     var sign = "";
     var x = 0;
