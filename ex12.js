@@ -123,8 +123,6 @@ function generateCalcul(numCal) {
         var num1 = getRandNum();
         var num2 = getRandNum();
 
-//        console.log(num1, num2);
-
         switch (getRandSign()) {
 
             case 0:
@@ -163,4 +161,4 @@ function generateCalcul(numCal) {
 }
 
 // Pour tester le code:
-console.log(generateCalcul(10));
+// console.log(generateCalcul(10));
