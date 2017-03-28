@@ -34,7 +34,7 @@ function addition(a, b) {
 }
 
 // Test 1 Result
-console.log(addition(6, 9));
+//console.log(addition(6, 9));
 
 // Test 2 Result
-console.log(addition(98766, 345678));
+//console.log(addition(98766, 345678));
