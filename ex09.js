@@ -32,12 +32,11 @@ function isEven(nb) {
 //___________________________________
 
 function boostedEvenAddition(tab) {
-    var cpt=0;
+    var cpt = 0;
 
     for (i = 0; i < tab.length; i++) {
         if (isEven(tab[i]) === 1) {
-            cpt = cpt+tab[i];
-            
+            cpt = cpt + tab[i];
         }
     }
     return cpt;
