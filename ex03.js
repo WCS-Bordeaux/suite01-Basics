@@ -29,3 +29,8 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition(x, y) {
+    return x + y;
+}
+addition(6, 9);
+addition(98766, 345678);

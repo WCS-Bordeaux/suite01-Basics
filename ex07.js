@@ -22,3 +22,24 @@
 // boostedAddition([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
+
+function boostedAddition(nbArr) {
+    if( typeof nbArr === "object") {
+        var res = 0;
+        for(var l = 0; l  < nbArr.length; l++) {
+            if(typeof nbArr[l] === "number") {
+                res += nbArr[l];
+            }
+        }
+        return res;
+    }
+    else {
+        return "invalid values";
+    }
+}
+
+var arr = [4, 5, 6];
+boostedAddition(arr);
+
+arr = [4, 4, 6, 8, 10, 12];
+boostedAddition(arr);

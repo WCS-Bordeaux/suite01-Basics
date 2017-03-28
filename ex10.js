@@ -18,3 +18,24 @@
 
 */
 
+var Person = function(fName, lName, age) {
+    this.firstName = fName;
+    this.lastName = lName;
+    this.age = age;
+    this.fullName = fName + " " + lName;
+    this.isAdult = function(age) {
+        if(age >= 18) {
+            console.log(this.fullName + " est majeur");
+            return this.fullName + " est majeur";
+        }
+        else {
+            console.log(this.fullName + " est mineur");
+            return this.fullName + " est mineur";
+        }
+    }
+}
+function getPerson(fName, lName, age) {
+    return new Person(fName, lName, age);
+}
+
+getPerson("toto", "tata", 45);
