@@ -32,7 +32,7 @@ function isEven(num) {
 }
 
 // Test1
-console.log(isEven(6));
+// console.log(isEven(6));
 
 // Test2
-console.log(isEven(5));
+// console.log(isEven(5));
