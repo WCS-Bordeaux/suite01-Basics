@@ -120,12 +120,11 @@ function evalExp(x, y, sign) {
     return res;
 }
 function getRandNum(multiplier) {
-    var multiplier = (multiplier + 1) || 10001;
+    var multiplier = (multiplier ) || 10000;
     let result = Math.round(Math.random() * multiplier);
-    if( result > multiplier) { result = multiplier;}
     return result;
 }
-
+console.log(getRandNum(4));
 function getSign() {
     return getRandNum(4);
 }
