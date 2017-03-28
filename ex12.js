@@ -116,24 +116,51 @@ function getRandSign() {
 //
 function generateCalcul(numCal) {
 
-    var outArray = [];
+    var calculs = [];
 
     for (var i = 0; i < numCal; i++) {
 
         var num1 = getRandNum();
         var num2 = getRandNum();
 
+//        console.log(num1, num2);
+
         switch (getRandSign()) {
 
-            case "0":
-
-            var operator = "+";
+            case 0:
             var outNum = num1 + num2;
-            
+            var calcul = num1 + " + " + num2 + " = " + outNum;
+            break;
+
+            case 1:
+            var outNum = num1 - num2;
+            var calcul = num1 + " - " + num2 + " = " + outNum;
+            break;
+
+            case 2:
+            var outNum = num1 * num2;
+            var calcul = num1 + " * " + num2 + " = " + outNum;
+            break;
+
+            case 3:
+            var outNum = num1 / num2;
+            var calcul = num1 + " / " + num2 + " = " + outNum;
+            break;
+
+            case 4:
+            var outNum = num1 % num2;
+            var calcul = num1 + " % " + num2 + " = " + outNum;
             break;
 
         }
 
+        calculs.push(calcul);
+
     }
 
+    return calculs;
+
 }
+
+// Pour tester le code:
+console.log(generateCalcul(10));
