@@ -28,12 +28,8 @@
 function isEven (nb) {
     var result = nb % 2;
     if (result === 0) {
-        console.log("Le nombre " + nb + " est pair");
         return 1;
     } else if (result === 1) {
-        console.log("Le nombre " + nb + " est impair");
         return 0;
-    } else {
-    console.log("Indiquez un nombre");
 }
 }

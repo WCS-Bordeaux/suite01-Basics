@@ -30,6 +30,6 @@ function boostedAddition(tableau) {
     for (i=0 ; i<tableau.length ; i++) {
         result += tableau[i];
 }
-    console.log(result);
+    return result;
     result = 0;
 }

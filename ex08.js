@@ -33,33 +33,25 @@
 //  écrire votre code sous ce commentaire
 
 
-function isAllEven (tableau) {
+function isAllEven(tableau) {
     var sum = 0;
-    for (i = 0; i<tableau.length; i++) {
+    for (i = 0; i < tableau.length; i++) {
         modulo = isEven(tableau[i]);
         sum += modulo;
     }
-    if (sum === 0){
-        console.log ("Tous les nombres sont pairs");
+    if (sum === 0) {
         return 1;
-        } else if (sum !== 0) {
-        console.log ("Au moin un nombre est impair");
+    } else if (sum !== 0) {
         return 0;
-        } else {
-        console.log("Erreur");
+
     }
-    
 }
 
-function isEven (nb) {
-    var result = nb % 2;
-    if (result === 0) {
-        console.log("Le nombre " + nb + " est pair");
-        return result;
-    } else if (result === 1) {
-        console.log("Le nombre " + nb + " est impair");
-        return result;
-    } else {
-    console.log("Indiquez un nombre");
-}
-}
+    function isEven(nb) {
+        var result = nb % 2;
+        if (result === 0) {
+            return result;
+        } else if (result === 1) {
+            return result;
+        } 
+    } 

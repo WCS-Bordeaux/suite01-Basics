@@ -52,13 +52,5 @@ function shoppingList(paniers) {
             }
         }
     }
-    console.log(counts);
+    return counts;
 }
-
-shoppingList([
-     ["orange", "orange", "kiwi", "ananas"],
-     ["kiwi", "ananas", "banane", "prune"],
-     ["orange", "orange", "orange", "orange"],
-     ["orange", "orange", "kiwi", "kiwi"],
-     ["prune", "banane", "pamplemousse", "ananas"]
- ]);

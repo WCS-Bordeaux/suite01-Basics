@@ -22,5 +22,5 @@
 //  écrire votre code sous ce commentaire
 
 function retParam (nb){
-    console.log(nb);
+    return nb;
 }

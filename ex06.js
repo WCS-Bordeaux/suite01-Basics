@@ -54,12 +54,12 @@
 
 function getHumanTypeByAge (age) {
     if ( age >= 124 || age < 1) {
-        console.log("impossible... ou encore jamais vu");
+        return "impossible... ou encore jamais vu";
     } else if (age >= 12 && age < 18) {
-        console.log("ado");
+        return "ado";
     } else if (age >= 18 && age < 124) {
-        console.log("adulte");
+        return "adulte";
     } else if (age < 12){
-        console.log("enfant");
+        return "enfant";
     }
 }
