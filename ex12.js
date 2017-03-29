@@ -1,15 +1,42 @@
+function evalExpr(a, b, operator) {
+   return 1;
+}
+
+function getRandNum() {
+   return Math.ceil((Math.random() * 901) + 100 );
+}
+
+function getRandSign() {
+   return Math.floor(Math.random() * 5);
+}
+
+function generateCalcul(number) {
+   var nOperator = getRandSign();
+   var randNumber = getRandNum();
+   console.log(nOperator);
+   switch (nOperator) {
+      case 0:
+      console.log(number + " + " + randNumber + " = " + (number + randNumber));
+      break;
+      case 1:
+      console.log(number + " - " + randNumber + " = " + (number - randNumber));
+      break;
+      case 2:
+      console.log(number + " * " + randNumber + " = " + (number * randNumber));
+      break;
+      case 3:
+      console.log(number + " / " + randNumber + " = " + (number / randNumber));
+      break;
+      case 4:
+      console.log(number + " % " + randNumber + " = " + (number % randNumber));
+      break;
+      default:
+      console.log("Error when creating a random operator");
+      return null;
+   }
+}
+
 /*
-
-       Eval Expr
-
-    // // // step 1
-
-    // Write a function "evalExpr" that can solve simples arithmetic calculs;
-
-    // We will pass only positive integer numbers.
-
-    // Exemples:
-
     // evalExpr(4, 5, "*"); // 20
     // evalExpr(3, 3, "+"); // 6
     // evalExpr(2, 2, "%"); // 0

@@ -31,3 +31,23 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nb) {
+   return (nb+1) % 2;
+}
+
+function isAllEven(nbArray) {
+   var pair = 0, impair = 0;
+   for (let i = 0; i < nbArray.length; i++) {
+      if (isEven(nbArray[i])) pair++;
+      else impair++;
+   }
+
+   if (impair == 0 && pair > 0) {
+      return 1;
+   } else if (impair > 0) {
+      return 0;
+   }
+}
+
+console.log(isAllEven([4, 5, 6]));
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));
