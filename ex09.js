@@ -22,3 +22,18 @@
 // boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
 
 //  écrire votre code sous ce commentaire
+
+function isEven(nb) {
+   return (nb+1) % 2;
+}
+
+function boostedEvenAddition(nbArray) {
+   var result = 0;
+   for (let i = 0; i < nbArray.length; i++) {
+      if (isEven(nbArray[i])) result += nbArray[i];
+   }
+   return result;
+}
+
+console.log(boostedEvenAddition([4, 5, 6]));
+console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));

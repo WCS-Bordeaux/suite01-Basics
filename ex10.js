@@ -18,3 +18,20 @@
 
 */
 
+function getPerson(firstName, lastName, age) {
+   var obj = {
+      fullName: firstName + " " + lastName,
+      age: age,
+      isAdult: function() {
+         if (age >= 18) return true;
+         else return false;
+      }
+   }
+   
+   return obj;
+}
+
+// var p = getPerson("Samy", "Bouamama", 20);
+// console.log(p.fullName);
+// console.log(p.age);
+// console.log(p.isAdult());

@@ -30,12 +30,25 @@
 
 */
 
-// shoppingList([
-//     ["orange", "orange", "kiwi", "ananas"],
-//     ["kiwi", "ananas", "banane", "prune"],
-//     ["orange", "orange", "orange", "orange"],
-//     ["orange", "orange", "kiwi", "kiwi"],
-//     ["prune", "banane", "pamplemousse", "ananas"]
-// ]);
+function shoppingList(paniers) {
+   var list = {};
 
-//  écrire votre code sous ce commentaire
+   for (let i = 0; i < paniers.length; i++) {
+      var item = paniers[i];
+      for (let it = 0; it < item.length; it++) {
+         if (list[item[it]] == undefined) {
+            list[item[it]] = 1;
+         } else list[item[it]]++;
+      }
+   }              
+
+   return list;                                                                                                                                                                                 
+}
+
+console.log(shoppingList([
+    ["orange", "orange", "kiwi", "ananas"],
+    ["kiwi", "ananas", "banane", "prune"],
+    ["orange", "orange", "orange", "orange"],
+    ["orange", "orange", "kiwi", "kiwi"],
+    ["prune", "banane", "pamplemousse", "ananas"]
+]));
