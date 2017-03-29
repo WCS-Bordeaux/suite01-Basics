@@ -91,7 +91,7 @@ function evalExpDivi(x, y) {
     return x / y || "input datas not valid (" + x / y + ")";
 }
 
-function evalExp(x, y, sign) {
+function evalExpr(x, y, sign) {
     let res = 0;
     switch(sign) {
         case "+":
@@ -115,12 +115,13 @@ function evalExp(x, y, sign) {
     }
     return res;
 }
-function getRandNum(multiplier) {
-    var multiplier = multiplier || 100000;
-    let result = Math.round(Math.random() * multiplier);
+function getRandNum(multiplier, min) {
+    var min = min || 0;
+    var multiplier = multiplier || 1000;
+    let result = Math.round(Math.random() * (multiplier - min) +min);
     return result;
 }
-console.log(getRandNum(4));
+
 function getRandSign() {
     return getRandNum(4);
 }
