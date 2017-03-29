@@ -1,41 +1,39 @@
 /*
 
-    getPerson
+ getPerson
 
-    Ecrire une fonction "getPerson", prenant en paramètre:
+ Ecrire une fonction "getPerson", prenant en paramètre:
 
-    "firstName": pour le prénom ("toto"),
-    "lastName": pour le nom de famille ("tata"),
-    "age": pour l'age (45)
+ "firstName": pour le prénom ("toto"),
+ "lastName": pour le nom de famille ("tata"),
+ "age": pour l'age (45)
 
-    Nous attendons un objet comme valeur de retour.
+ Nous attendons un objet comme valeur de retour.
 
-    Cet objet contiendra:
+ Cet objet contiendra:
 
-        - un attribut "fullName" pour le prénom et le nom ensemble "toto tata"
-        - un attribut "age" pour l'age de la personne
-        - une fonction "isAdult" pour tester si la personne est majeur;
+ - un attribut "fullName" pour le prénom et le nom ensemble "toto tata"
+ - un attribut "age" pour l'age de la personne
+ - une fonction "isAdult" pour tester si la personne est majeur;
 
-*/
+ */
+function getPerson(fName, lName, age) {
+    var person = {
+        firstName: fName,
+        lastName: lName,
+        age: age,
+        isAdult: function (age) {
+            if (this.age >= 18) {
+                return fName + " " + lName + " est majeur";
+            }
+            else {
+                return fName + " " + lName + " est mineur";
+            }
 
-var Person = function(fName, lName, age) {
-    this.firstName = fName;
-    this.lastName = lName;
-    this.age = age;
-    this.fullName = fName + " " + lName;
-    this.isAdult = function(age) {
-        if(age >= 18) {
-            console.log(this.fullName + " est majeur");
-            return this.fullName + " est majeur";
-        }
-        else {
-            console.log(this.fullName + " est mineur");
-            return this.fullName + " est mineur";
         }
     }
-}
-function getPerson(fName, lName, age) {
-    return new Person(fName, lName, age);
+    return person;
 }
 
-getPerson("toto", "tata", 45);
+
+console.log(getPerson("toto", "tata", 45));
