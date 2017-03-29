@@ -52,7 +52,8 @@ div#header h1 {
 }
 
 input#calcField {
-    color: #F34B49;
+    color: #3E3E3E;
+    font-size: 1em;
     width: 30%;
     height: 5%;
     margin: 20px;
@@ -60,6 +61,11 @@ input#calcField {
     border: 3px solid grey;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+p#displayCalc {
+    color: white;
     text-align: center;
 }
 

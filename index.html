@@ -20,13 +20,15 @@
 
 	<div id="container">
 
-		<input
-			type="text" id="calcField" name="Number of Calculations"
-		/>
-		<input
-			type="submit" id="calcButton" name="Submit" onclick="generateCalcul('calcField');"
-		/>
+		<input type="text" id="calcField" name="Number of Calculations" />
 
+		<input type="submit" id="calcButton" name="Submit" onclick="generateCalcul();" />
+
+		<p id='displayCalc'> </p>
+<!--	<h2 id='displayCalc'> Below I will display the operations </h2> -->
+<!--			Look what happens to this text if you click the below button
+		<button type="button" onclick="generateCalcul()"> Click on me! </button>
+-->
 	</div>
 
 	<script src="bonus.js" type="text/javascript"> </script>

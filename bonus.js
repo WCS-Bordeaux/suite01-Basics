@@ -41,14 +41,17 @@ function getRandSign() {
 
 // Step 3
 //
-function generateCalcul(numCal) {
+//var numCal = 0;
+//function generateCalcul(numCal) {
+function generateCalcul() {
 
-    var numberCalc = document.getElementById('calcField').value;
+//    var numberCalc = document.getElementById('calcField').value;
+    var numCal = document.getElementById('calcField').value;
 
     var calculs = [];
 
-//    for (var i = 0; i < numCal; i++) {
-    for (var i = 0; i < numberCalc; i++) {
+    for (var i = 0; i < numCal; i++) {
+//    for (var i = 0; i < numberCalc; i++) {
 
         var num1 = getRandNum();
         var num2 = getRandNum();
@@ -86,7 +89,18 @@ function generateCalcul(numCal) {
 
     }
 
-    return calculs;
-//    console.log(calculs);
-
+//    return calculs;
+//    return(console.log(calculs));
+    var displayCalc = document.getElementById("displayCalc");
+    return displayCalc.innerHTML = calculs + " <br>";
 }
+
+//var displayCalc = document.getElementById("displayCalc");
+
+//displayCalc.innerHTML = generateCalcul();
+
+//console.log(numCal);
+
+//document.getElementById("displayCalc").innerHTML = generateCalcul(numCal);
+// document.getElementById("displayCalc").innerHTML = "Hello!";
+// console.log(generateCalcul(numCal));
