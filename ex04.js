@@ -24,8 +24,9 @@
 // isEven(5);
 
 //  écrire votre code sous ce commentaire
+
 function isEven(nb) {
-    return 1-(nb %2);
+    return !(nb % 2) ? 1 :  0;
 }
 
 isEven(6);
