@@ -81,9 +81,9 @@ function generateCalcul() {
 
     }
 
-    var displayCalc = document.getElementById("displayCalc");
+   var displayCalc = document.getElementById("displayCalc");
 
-    var html = [];
+   var html = [];
 
     calculs.forEach(function(pippo) {
 
@@ -91,10 +91,14 @@ function generateCalcul() {
 
     });
 
-//    function displayResults(html) {
-//        displayCalc.innerHTML = html;
-//    }
+/*    function displayResults(html) {
+        var displayCalc = document.getElementById("displayCalc");
+        displayCalc.innerHTML = html;
+        return displayCalc.innerHTML;
+    }
 
+    displayResults();
+*/
     displayCalc.innerHTML = html;
 //    setTimeout(displayCalc.innerHTML, 150);
 //    setTimeout(displayResults(), 150);
