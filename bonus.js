@@ -91,7 +91,12 @@ function generateCalcul() {
 
     });
 
+//    function displayResults(html) {
+//        displayCalc.innerHTML = html;
+//    }
+
     displayCalc.innerHTML = html;
 //    setTimeout(displayCalc.innerHTML, 150);
+//    setTimeout(displayResults(), 150);
 
 }
