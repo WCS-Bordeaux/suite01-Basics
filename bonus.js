@@ -81,7 +81,7 @@ function generateCalcul() {
 
     }
 
-   var displayCalc = document.getElementById("displayCalc");
+// Fill the empty array named html
 
    var html = [];
 
@@ -91,16 +91,15 @@ function generateCalcul() {
 
     });
 
-/*    function displayResults(html) {
-        var displayCalc = document.getElementById("displayCalc");
-        displayCalc.innerHTML = html;
-        return displayCalc.innerHTML;
-    }
+// Use the native function setTimeout(function, delaytime)
+// to delay the display of html
 
-    displayResults();
-*/
-    displayCalc.innerHTML = html;
-//    setTimeout(displayCalc.innerHTML, 150);
-//    setTimeout(displayResults(), 150);
+    setTimeout(function() {
+
+        var displayCalc = document.getElementById("displayCalc");
+
+        displayCalc.innerHTML = html;
+
+    }, 150);
 
 }
