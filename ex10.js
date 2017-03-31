@@ -19,6 +19,7 @@
  */
 function getPerson(fName, lName, age) {
     var person = {
+        fullName: fName + " " + lName,
         firstName: fName,
         lastName: lName,
         age: age,
@@ -36,4 +37,5 @@ function getPerson(fName, lName, age) {
 }
 
 
-console.log(getPerson("toto", "tata", 45));
+// console.log(getPerson("toto", "tata", 45));
+getPerson("toto", "tata", 45);
