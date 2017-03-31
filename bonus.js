@@ -108,22 +108,25 @@ function generateCalcul() {
 
     }, 1500);
 */
-/*
+
 // We try first to use the loop that wraps setTimeout()
     calculs.forEach(function(pippo) {
 
-        setTimeout(function() {
+//        setTimeout(function() {
 
-            var displayCalc = document.getElementById("displayCalc");
-            
-            displayCalc.innerHTML += pippo + "<br />";
+            setTimeout(function() {
 
-        }, 500);
+                var displayCalc = document.getElementById("displayCalc");
+                
+                displayCalc.innerHTML += pippo + "<br />";
+
+            }, 500);
+
+//        }, 500);
 
     });
-*/
 
-
+/*
 // Here, instead, we have the setTimeout() function that wraps the loop
     setTimeout(function() {
 
@@ -136,6 +139,6 @@ function generateCalcul() {
         });
 
     }, 500);
-
+*/
 
 }
