@@ -34,7 +34,7 @@
 function isAllEven(nbArr) {
     var allEven = 1;
     for (var l = 0; l < nbArr.length; l++) {
-        if ( isEven(nbArr[l]) == 1 ) {
+        if ( isEven(nbArr[l]) === 1 ) {
             allEven = 0;
             break;
         }
