@@ -27,7 +27,11 @@
 
 function isEven(nb) {
     return !(nb % 2) ? 1 :  0;
+    //autre méthode:
+    //return parseInt(nb % 2 === 0);
+    //return Number(nb % 2 === 0);
 }
 
 isEven(6);
 isEven(5);
+// console.log(isEven(8));

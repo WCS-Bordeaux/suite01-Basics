@@ -26,7 +26,7 @@
 
     // // // step 2
 
-    // Code a function "getRandNum" that return a random number between 0(included) and 100 000(included).
+    // Code a function "getRandNum" that return a random number between 100(included) and 1000(included).
 
     // Validation:
     // really random please.
@@ -76,20 +76,26 @@
 var isHtmlVersion = isHtmlVersion || false;
 
 function evalExpAdd(x, y) {
-    return x + y || "input datas not valid (" + x + y + ")";
+    return typeof((x + y) === 'number') ? x + y  : 0
 }
 function evalExpSub(x, y) {
-    return x - y || "input datas not valid (" + -  y + ")";
+    return typeof((x - y) === 'number') ? x - y : 0
 }
 function evalExpModul(x, y) {
-    return x % y || "input datas not valid (" + x % y + ")";
+    return x % y || 0;
 }
 function evalExpMulti(x, y) {
-    return x * y || "input datas not valid (" + x * y + ")";
+    return typeof((x * y) === 'number') ? x * y : 0
 }
 function evalExpDivi(x, y) {
-    return x / y || "input datas not valid (" + x / y + ")";
+    return typeof((x / y) === 'number') ? x / y : 0
 }
+
+// console.log("+ ::" + evalExpr(getRandNum(), getRandNum(4), "+"));
+// console.log("/ ::" + evalExpr(4, 4, "/"));
+// console.log("* ::" + evalExpr(4, 4, "*"));
+// console.log("% ::" + evalExpr(4, 4, "%"));
+// console.log("- ::" + evalExpr(4, 4, "-"));
 
 function evalExpr(x, y, sign) {
     let res = 0;
@@ -116,15 +122,15 @@ function evalExpr(x, y, sign) {
     return res;
 }
 function getRandNum(multiplier, min) {
-    var min = min || 0;
+    var min = min || 100;
     var multiplier = multiplier || 1000;
-    let result = Math.round(Math.random() * (multiplier - min) +min);
-    return result;
+    return Math.round(Math.random() * (multiplier - min) +min);
 }
 
 function getRandSign() {
     return getRandNum(4);
 }
+console.log("plouf :: " + getRandNum());
 
 function animateEnd() {
     var container = document.getElementById('container');
@@ -205,7 +211,7 @@ function generateCalcul(nb) {
 if(!isHtmlVersion) {
     getRandNum();
     getRandSign();
-    generateCalcul(6);
+    generateCalcul();
 }
 
 
