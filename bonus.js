@@ -83,14 +83,20 @@ function generateCalcul() {
 
 // Fill the empty array named html
 
-   var html = [];
-
+//   var html = [];
+//   var html = calculs;
+/*
     calculs.forEach(function(pippo) {
 
-        html.push("<br /> " + pippo);
+        var displayCalc = document.getElementById("displayCalc");
+            
+        displayCalc.innerHTML += pippo + "<br />";
+
+//        html.push("<br /> " + pippo);
 
     });
-
+*/
+/*
 // Use the native function setTimeout(function, delaytime)
 // to delay the display of html
 
@@ -98,8 +104,38 @@ function generateCalcul() {
 
         var displayCalc = document.getElementById("displayCalc");
 
-        displayCalc.innerHTML = html;
+        displayCalc.innerHTML = calculs.join("<br />");
 
-    }, 150);
+    }, 1500);
+*/
+/*
+// We try first to use the loop that wraps setTimeout()
+    calculs.forEach(function(pippo) {
+
+        setTimeout(function() {
+
+            var displayCalc = document.getElementById("displayCalc");
+            
+            displayCalc.innerHTML += pippo + "<br />";
+
+        }, 500);
+
+    });
+*/
+
+
+// Here, instead, we have the setTimeout() function that wraps the loop
+    setTimeout(function() {
+
+        calculs.forEach(function(pippo) {
+
+            var displayCalc = document.getElementById("displayCalc");
+
+            displayCalc.innerHTML += pippo + "<br />";
+
+        });
+
+    }, 500);
+
 
 }
