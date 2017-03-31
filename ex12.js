@@ -71,6 +71,23 @@
 
 */
 
+/*
+// correction
+
+function evalExpr(nb1, nb2, sign) {
+    let calculs = {
+        "+": function( a, b) { return a + b; },
+        "-": function( a, b) { return a - b; },
+        "*": function( a, b) { return a * b; },
+        "/": function( a, b) { return b === 0 ? 0 : a / b; },
+        "%": function( a, b) { return b === 0 ? 0 : a % b; },
+    }
+    return calculs[sign](nb1, nb2);
+}
+
+console.log(evalExpr(4, 5 , "*"));
+*/
+
 // write your code below this comment
 
 var isHtmlVersion = isHtmlVersion || false;

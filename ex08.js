@@ -31,6 +31,20 @@
 
 //  écrire votre code sous ce commentaire
 
+/*
+//correction
+function isAllEven(nbArr) {
+    let res = 1;
+    let i = -1, len = nbArr.length;
+    while( ++i < len) {
+        let currentNum = nbArr[i];
+        if (isEven(currentNum) === 1) {
+            res = 0;
+        }
+    }
+    return res;
+}
+*/
 function isAllEven(nbArr) {
     var allEven = 1;
     for (var l = 0; l < nbArr.length; l++) {
@@ -43,11 +57,9 @@ function isAllEven(nbArr) {
 }
 
 function isEven(nb) {
-    return nb %2;
+    return nb % 2  ;
 }
-
 var arr = [4, 5, 6];
 isAllEven(arr);
-
 arr = [4, 4, 6, 8, 10, 12];
 isAllEven(arr);

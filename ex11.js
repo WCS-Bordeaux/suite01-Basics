@@ -41,15 +41,30 @@
 //  écrire votre code sous ce commentaire
 
 function shoppingList(paniers) {
+/*
+    // correction
+    let fruits = [];
+
+    for (let i = 0, len = paniers.length; i < len; i++) {
+        let currentList =  paniers[i];
+
+        for (let j = 0, len2 = currentList.length; j < len2; j++ ) {
+            let currentFruit = currentList[j];
+
+            if (typeof fruits[currentFruit] !== "undefined") {
+                fruits[currentFruit] += 1;
+            } else {
+                fruits[currentFruit] = 1;
+            }
+        }
+    }
+    return fruits;
+*/
+
     var res = [];
     for (var l = 0; l < paniers.length; l ++) {
         for( var p = 0; p < paniers[l].length; p++) {
-            res[paniers[l][p]] = 0;
-        }
-    }
-    for (var l = 0; l < paniers.length; l ++) {
-        for( var p = 0; p < paniers[l].length; p++) {
-            res[paniers[l][p]] += 1;
+            res[paniers[l][p]] = (res[paniers[l][p]] || 0) + 1;
         }
     }
     return res;
@@ -63,3 +78,4 @@ var arr = [
     ["prune", "banane", "pamplemousse", "ananas"]
 ];
 shoppingList(arr);
+console.log(shoppingList(arr));

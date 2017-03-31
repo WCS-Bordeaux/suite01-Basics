@@ -20,22 +20,20 @@
 function getPerson(fName, lName, age) {
     var person = {
         fullName: fName + " " + lName,
-        firstName: fName,
-        lastName: lName,
+        // firstName: fName,
+        // lastName: lName,
         age: age,
-        isAdult: function (age) {
-            if (this.age >= 18) {
-                return fName + " " + lName + " est majeur";
-            }
-            else {
-                return fName + " " + lName + " est mineur";
-            }
-
+        isAdult: function() {
+            return this.age >= 18
+            // if (this.age >= 18) {
+            //     return fName + " " + lName + " est majeur";
+            // }
+            // else {
+            //     return fName + " " + lName + " est mineur";
+            // }
         }
     }
     return person;
 }
 
-
-// console.log(getPerson("toto", "tata", 45));
 getPerson("toto", "tata", 45);

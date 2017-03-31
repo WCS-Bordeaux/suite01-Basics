@@ -24,6 +24,22 @@
 //  écrire votre code sous ce commentaire
 
 function boostedAddition(nbArr) {
+
+/*    //correction
+    let result = 0;
+    let i = 0;
+    while( i  < nbArr.length ) {
+        result += nbArr[i]
+        i++;
+    }
+    return result;
+
+    //variante:
+    let i = -1;
+    while( ++i < nbArr.length ) {
+        ...
+    }
+*/
     if( typeof nbArr === "object") {
         var res = 0;
         for(var l = 0; l  < nbArr.length; l++) {
@@ -43,3 +59,4 @@ boostedAddition(arr);
 
 arr = [4, 4, 6, 8, 10, 12];
 boostedAddition(arr);
+
