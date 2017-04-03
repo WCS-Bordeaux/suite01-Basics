@@ -33,3 +33,8 @@ function isEven (nb) {
         return 0;
 }
 }
+
+// autres façons :
+// return parseInt(nb % 2 === 0)
+// return nombre(nb % 2 === 0)
+// return nb % 2 === 0 ? 1 : 0
