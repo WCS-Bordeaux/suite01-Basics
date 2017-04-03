@@ -33,3 +33,14 @@ function boostedAddition(tableau) {
     return result;
     result = 0;
 }
+
+
+/* function boostedAddition (tableau) {
+    let result = 0;
+    let i =-1;
+    while (++i<tableau.length) {
+        result += tableau[i];
+    }
+    return result;
+}
+*/

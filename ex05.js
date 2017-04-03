@@ -28,8 +28,8 @@
 function isEvenConcat (nb) {
     var result = nb % 2;
     if (result === 0){
-        return (nb + " est pair.");
+        return (nb.toString() + " est pair.");
     } else {
-        return (nb + " est impair.");
+        return (nb.toString() + " est impair.");
     }
 }
