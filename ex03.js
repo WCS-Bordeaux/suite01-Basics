@@ -29,3 +29,8 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition (nb1, nb2) {
+    var result = nb1 + nb2;
+    return result;
+    
+}

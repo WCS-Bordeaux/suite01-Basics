@@ -24,3 +24,17 @@
 // isEven(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEven (nb) {
+    var result = nb % 2;
+    if (result === 0) {
+        return 1;
+    } else if (result === 1) {
+        return 0;
+}
+}
+
+// autres façons :
+// return parseInt(nb % 2 === 0)
+// return nombre(nb % 2 === 0)
+// return nb % 2 === 0 ? 1 : 0

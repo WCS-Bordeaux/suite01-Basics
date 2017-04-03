@@ -1,3 +1,4 @@
+
 /*
     Ecrire une fonction "isAllEven",
     qui prend un paramètre un tableau de nombre,
@@ -31,3 +32,26 @@
 
 //  écrire votre code sous ce commentaire
 
+
+function isAllEven(tableau) {
+    var sum = 0;
+    for (i = 0; i < tableau.length; i++) {
+        modulo = isEven(tableau[i]);
+        sum += modulo;
+    }
+    if (sum === 0) {
+        return 1;
+    } else if (sum !== 0) {
+        return 0;
+
+    }
+}
+
+    function isEven(nb) {
+        var result = nb % 2;
+        if (result === 0) {
+            return result;
+        } else if (result === 1) {
+            return result;
+        } 
+    } 

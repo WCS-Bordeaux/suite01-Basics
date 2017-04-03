@@ -39,3 +39,18 @@
 // ]);
 
 //  écrire votre code sous ce commentaire
+
+function shoppingList(paniers) {
+    var counts = {};
+    for (i = 0; i < paniers.length; i++) {
+        for (j = 0; j < paniers[i].length; j++) {
+            val = paniers[i][j];
+            if (typeof counts[val] === "undefined") {
+                counts[val] = 1;
+            } else {
+                counts[val]++;
+            }
+        }
+    }
+    return counts;
+}

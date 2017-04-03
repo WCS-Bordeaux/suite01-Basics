@@ -22,3 +22,24 @@
 // boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
 
 //  écrire votre code sous ce commentaire
+
+function boostedEvenAddition (tableau) {
+    var sump = 0
+    for (i = 0; i<tableau.length; i++) { 
+    if (isEven(tableau[i]) === 0) {
+        sump = sump + tableau[i];
+}
+}
+    return sump;
+}
+
+function isEven (nb) {
+    var result = nb % 2;
+    if (result === 0) {
+        return result;
+    } else if (result === 1) {
+        return result;
+    } else {
+    console.log("Indiquez un nombre");
+}
+}
